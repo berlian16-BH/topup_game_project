@@ -105,6 +105,14 @@
         .no-transition {
             transition: none !important;
         }
+        .data-title {
+    color: white; /* Warna teks putih */
+    font-size: 20px; /* Ukuran font */
+    margin: 0; /* Menghilangkan margin default */
+    margin-top: -550px;
+    margin-left: -200px;
+}
+
     </style>
 </head>
 <body>
@@ -112,12 +120,14 @@
         <span class="nav-item" data-target="list_game">Game Lainnya</span>
         <span class="nav-item" data-target="list_pulsa">Pulsa</span>
         <span class="nav-item" data-target="list_voucher">Voucher</span>
-        <span class="nav-item" data-target="list_liveapp">LiveApp</span>
+        <span class="nav-item" data-target="list_liveapp">E-Wallet</span>
         <span class="nav-item" data-target="list_pln">PLN</span>
     </div>
     <div id="content" class="content">
         <!-- Konten akan dimuat di sini -->
     </div>
+
+
 
     <script>
         document.addEventListener('DOMContentLoaded', function() {

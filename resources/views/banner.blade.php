@@ -9,40 +9,40 @@
     <style>
         .container {
             display: flex;
-            justify-content: center; /* Center horizontally */
-            align-items: flex-start; /* Align to the top */
-            height: 70vh; /* Full viewport height */
-            padding-top: 40px; /* Space from the top */
-            background-size: cover; /* Menutupi seluruh area */
-            background-position: center; /* Posisi gambar di tengah */
-            background-repeat: no-repeat; /* Tidak mengulang gambar */
+            justify-content: center;
+            align-items: flex-start;
+            height: 70vh;
+            padding-top: 40px;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
         }
         .carousel {
-            width: 100%; /* Set the width of the carousel to 100% of the container */
-            max-width: 1200px; /* Adjust the maximum width as needed */
-            border-radius: 15px; /* Set rounded corners for the carousel */
-            overflow: hidden; /* Hide overflowed content */
-            border: 5px solid #fff; /* White border around the carousel */
+            width: 100%;
+            max-width: 1200px;
+            border-radius: 15px;
+            overflow: hidden;
+            border: 5px solid #fff;
         }
         .carousel-item {
-            position: relative; /* Set position relative for absolute positioning of card */
-            overflow: hidden; /* Hide overflowed content */
-            border-radius: 15px; /* Set rounded corners for each carousel item */
-            border: 2px solid #fff; /* White border around each carousel item */
+            position: relative;
+            overflow: hidden;
+            border-radius: 15px;
+            border: 2px solid #fff;
         }
         .carousel-item img {
-            width: 100%; /* Make the image fit the carousel width */
-            height: 400px; /* Adjust the height of the image */
-            object-fit: cover; /* Ensure image covers the carousel area */
-            border-radius: 15px; /* Set rounded corners for the image */
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 15px;
         }
         .carousel-card {
-            position: absolute; /* Position card at the bottom of the carousel item */
+            position: absolute;
             bottom: 10px;
             left: 0;
             right: 0;
             padding: 15px;
-            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+            background-color: rgba(0, 0, 0, 0.5);
             color: white;
             border-radius: 10px;
         }
@@ -50,12 +50,11 @@
 </head>
 <body>
     <div class="container">
-        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                <!-- Tambahkan lebih banyak tombol indikator jika ada lebih banyak slide -->
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item active">
@@ -67,14 +66,12 @@
                 <div class="carousel-item">
                     <img src="{{ asset('banner3.png') }}" class="d-block w-100" alt="Banner 3">
                 </div>
-                <!-- Tambahkan lebih banyak item carousel jika ada lebih banyak slide -->
             </div>
+           
         </div>
-      
     </div>
-   
+
     <!-- Link ke file JavaScript Bootstrap -->
     <script src="{{ asset('js/bootstrap.bundle.min.js') }}"></script>
-    
 </body>
 </html>

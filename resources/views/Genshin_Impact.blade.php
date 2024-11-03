@@ -236,6 +236,14 @@
     margin-left: 460px;
 }
 
+.data-kode {
+    color: white; /* Warna teks putih */
+    font-size: 20px; /* Ukuran font */
+    margin: 0; /* Menghilangkan margin default */
+    margin-top:20px;
+    margin-left: 460px;
+}
+
 
     </style>
     <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
@@ -259,24 +267,24 @@
                     <ul class="navbar-nav justify-content-start flex-grow-1 pe-3">
                         <li class="nav-item">
                             <img src="{{ asset('logo.png') }}" alt="Logo">
-                            <a class="nav-link active" aria-current="page" href="#">Semua Game</a>
+                            <a class="nav-link active" aria-current="page" href="home_game">Semua Game</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Daftar Harga</a>
+                            <a class="nav-link" href="home_harga">Daftar Harga</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Lacak Pesanan</a>
+                            <a class="nav-link" href="home_lacak">Lacak Pesanan</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" aria-expanded="false" onclick="toggleDropdown(event)">
                                 Calculator MLBB
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Winrate</a></li>
+                                <li><a class="dropdown-item" href="home_winrate">Winrate</a></li>
                                 <li><hr class="dropdown-divider"></li>
-                                <li><a class="dropdown-item" href="#">Magic Wheel</a></li>
+                                <li><a class="dropdown-item" href="home_magic">Magic Wheel</a></li>
                                 <li><hr class="dropdown-divider"></li>
-                                <li><a class="dropdown-item" href="#">Zodiac</a></li>
+                                <li><a class="dropdown-item" href="home_zodiac">Zodiac</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -319,14 +327,10 @@
    
     <!-- Tambahkan bagian ini di dalam .content-container -->
     <div class="data-container">
-        <h4 class="data-title">@include('form_genshin') </h4>
+        <h4 class="data-title">@include('form') </h4>
     </div> 
 
-    <div class="data-container">
-    <h4 class="data-nominal"> @include('pilih_nominal') </h4>
-   
     
-      
     </div>
    
 </div>
